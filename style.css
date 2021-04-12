@@ -31,3 +31,311 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+* {
+	text-decoration: none;
+}
+/*menu*/
+/*
+.menu ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(255, 255, 255);
+}
+
+.menu .logo{
+	padding: 0 30px 0 50px;
+	font-size: 18px;
+	font-weight: 700;
+} 
+
+.menu a {
+	display: inline-block;
+	padding: 20px 30px;
+	color: #000;
+}
+.menu a:hover {
+	background-color: #48418e;
+	color: #ffffff;
+}
+*/
+/* hero sekce / banner */
+/* .header {
+	min-height: 450px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background:#25133d url(images/pozadi.jpg) no-repeat center/cover;
+}
+
+.hero-text {
+	padding-left: 50px;
+	color: #fff;
+}
+
+.hero-text .title {
+	font-size: 90px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.hero-text .moto{
+	font-size: 36px;
+	font-weight: 300;
+	margin-top: 20px;
+	line-height: 1.2;
+}
+	
+.hero-img img {
+	display: block;
+}
+
+.btns {
+	margin: 50px 0 60px 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	border: 1px solid white;
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 10px;
+}
+.btn-primary{
+	margin-right: 20px;
+	background-color:  #48418e;
+}
+	.btn-primary:hover,
+	.btn-secondary:hover {
+		background-color:#25133d ;
+	} */
+
+/*obsah se 3 sloupci*/
+/* .content {
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.benefits {
+	flex: 0 0 calc((100% - 60px) / 3);
+	text-align: center;
+}
+.icon {
+	width: 60px;
+}
+
+.benefits h2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #48418e;
+} */
+
+/*patička*/
+/* .footer {
+	background-color: #48418e;
+	
+}
+.footer p {
+	text-align: center;
+	color: white;
+	padding: 10px;
+	margin: 0;
+} */
+
+/*RESPONZIVNÍ*/
+/*menu*/
+
+.menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(255, 255, 255);
+}
+
+.menu .logo{
+	flex: 100%;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 700;
+} 
+
+.menu a {
+	display: inline-block;
+	padding: 10px 10px;
+	color: #000;
+	font-size: 13px;
+}
+.menu a:hover {
+	background-color: #48418e;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 450px){
+	.menu a {
+		padding: 10px ;
+		font-size: 16px;
+	}
+} 
+
+@media screen and (min-width: 700px){
+	.menu ul {
+		flex-wrap: nowrap;
+	}
+	.menu .logo{
+		flex: 0 1 auto;
+		padding: 0 30px 0 30px;
+	}
+	.menu a {
+		padding: 20px 30px;
+		font-size: 16px;
+	}
+} 
+
+/* hero sekce / banner */
+.header {
+	min-height: 350px;
+	background:#25133d url(images/pozadi.jpg) no-repeat center/cover;
+}
+
+.hero-text {
+	padding: 50px 0 10px 10px;
+	color: #fff;
+}
+
+.hero-text .title {
+	font-size: 45px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.hero-text .moto{
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 20px;
+	line-height: 1.2;
+}
+	
+.hero-img img {
+	display: block;
+}
+
+.btns {
+	margin: 50px 0 60px 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	border: 1px solid white;
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 10px;
+}
+.btn-primary{
+	margin-right: 20px;
+	background-color:  #48418e;
+	margin-bottom: 20px;
+}
+	.btn-primary:hover,
+	.btn-secondary:hover {
+		background-color:#25133d ;
+	}
+
+@media screen and (max-width: 630px){
+	.hero-img img {
+		display: none;
+	}
+} 
+	
+@media screen and (min-width: 550px){
+	.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	}
+	.hero-text {
+		flex: 1 1 50%;
+	}
+	.hero-img img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 700px){
+	.hero-text {
+		padding: 50px 0 0 30px;
+	}
+	
+	.hero-text .title {
+		font-size: 50px;
+	}
+	.hero-img img {
+		width: 350px;
+	}
+}
+@media screen and (min-width: 940px){
+	.hero-text .title {
+		font-size: 90px;
+	}
+	.hero-img img {
+		width: 400px;
+	}
+}
+
+/*3sloupce*/
+.content {
+	padding: 50px 20px 0 20px;
+}
+
+.benefits {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.icon {
+	width: 60px;
+}
+
+.benefits h2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #48418e;
+	margin-top: 0;
+}
+
+@media screen and (min-width: 600px){
+	.content {
+	padding: 50px 100px 0 100px;
+}
+}
+
+@media screen and (min-width: 800px){
+	.content {
+		display: flex;
+		justify-content: space-between;
+		padding: 50px 50px 0 50px;
+	}
+	.benefits {
+		flex: 0 0 calc((100% - 60px) / 3);
+	}
+}
+
+/*Patička*/
+.footer {
+	background-color: #48418e;
+	
+}
+.footer p {
+	text-align: center;
+	color: white;
+	padding: 10px;
+	margin: 0;
+}
